@@ -15,11 +15,6 @@ public class TempConverter {
 
             int choice = scan.nextInt();
             switch (choice) {
-                default:
-                {
-                    System.out.println("Error");
-                    break;
-                }
                 case 1:
                     System.out.print("Enter your temp in farenheit: ");
                     double farenheit = scan.nextDouble();
@@ -39,6 +34,9 @@ public class TempConverter {
                 case 3:
                     menu = false;
                     System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
                     break;
                 // TODO: Implement temperature converter
                 // Requirements:
