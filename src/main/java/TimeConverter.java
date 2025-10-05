@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 public class TimeConverter {
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class TimeConverter {
             System.out.println("Total: " + totseconds + "seconds");
             System.out.print("Do you want to convert another time? y/n: ");
             String s = scan.next();
-            if (s == "n")
+            if (Objects.equals(s, "n"))
                 menu = false;
         }
         // TODO: Implement time converter
