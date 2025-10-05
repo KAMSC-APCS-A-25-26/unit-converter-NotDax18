@@ -16,12 +16,6 @@ public class DistanceConverter {
 
             int choice = scan.nextInt();
             switch (choice) {
-                default:
-                {
-                    System.out.println("Error");
-                    break;
-                }
-
                 case 1:
                     System.out.print("Enter your distance in miles: ");
                     double miles = scan.nextDouble();
@@ -53,6 +47,9 @@ public class DistanceConverter {
                 case 3:
                     menu = false;
                     System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
                     break;
                     // Requirements:
                     // - Menu with options: 1. Convert Miles to Kilometers, 2. Convert Kilometers to Miles, 3. Exit
